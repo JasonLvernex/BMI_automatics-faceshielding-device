@@ -1,0 +1,158 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: 礦ision V5.14.0.0
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: jason lverne, alientek, LIC=BL2UH-W1D5H-GN6A5-GVILA-KJDCA-326D7
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.14.0.0
+Toolchain Path:  F:\mdk5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 update 1 (build 106)
+Assembler:       Armasm.exe V5.05 update 1 (build 106)
+Linker/Locator:  ArmLink.exe V5.05 update 1 (build 106)
+Library Manager: ArmAr.exe V5.05 update 1 (build 106)
+Hex Converter:   FromElf.exe V5.05 update 1 (build 106)
+CPU DLL:         SARMCM3.DLL V5.14.0.0
+Dialog DLL:      DCM.DLL V1.13.1.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.14.0_KEIL
+Dialog DLL:      TCM.DLL V1.14.4.0
+ 
+<h2>Project:</h2>
+C:\Users\lenovo\Desktop\EMG_team (1)\实验14  ADC实验\USER\ADC.uvprojx
+Project File Date:  12/05/2021
+
+<h2>Output:</h2>
+Rebuild target 'ADC'
+compiling main.c...
+scheduler.h(4): warning:  #1-D: last line of file ends without a newline
+  #endif
+main.c(75): warning:  #177-D: variable "key" was declared but never referenced
+                u8 key;
+main.c(76): warning:  #177-D: variable "i" was declared but never referenced
+        u16 i=0;
+main.c(80): warning:  #177-D: variable "temp" was declared but never referenced
+        float temp;
+main.c(24): warning:  #177-D: variable "ucRxBuffer" was declared but never referenced
+        static unsigned char ucRxBuffer[250],uccRxBuffer[250];
+main.c(24): warning:  #177-D: variable "uccRxBuffer" was declared but never referenced
+        static unsigned char ucRxBuffer[250],uccRxBuffer[250];
+main.c(26): warning:  #550-D: variable "ucccRxBuffer" was set but never used
+    static unsigned short ucccRxBuffer[250];
+main.c: 7 warnings, 0 errors
+compiling stm32f10x_it.c...
+stm32f10x_it.c(101): warning:  #223-D: function "printf" declared implicitly
+  printf("\n\n[Hard fault handler - all numbers in hex]\n\n");
+stm32f10x_it.c(53): warning:  #550-D: variable "SHCSR" was set but never used
+  static unsigned int SHCSR;
+stm32f10x_it.c(55): warning:  #550-D: variable "MFSR" was set but never used
+  static unsigned char MFSR;
+stm32f10x_it.c(57): warning:  #550-D: variable "BFSR" was set but never used
+  static unsigned char BFSR;
+stm32f10x_it.c(59): warning:  #550-D: variable "UFSR" was set but never used
+  static unsigned short int UFSR;
+stm32f10x_it.c(61): warning:  #550-D: variable "HFSR" was set but never used
+  static unsigned int HFSR;
+stm32f10x_it.c(63): warning:  #550-D: variable "DFSR" was set but never used
+  static unsigned int DFSR;
+stm32f10x_it.c(65): warning:  #550-D: variable "MMAR" was set but never used
+  static unsigned int MMAR;
+stm32f10x_it.c(67): warning:  #550-D: variable "BFAR" was set but never used
+  static unsigned int BFAR;
+stm32f10x_it.c: 9 warnings, 0 errors
+compiling system_stm32f10x.c...
+compiling key.c...
+compiling adc.c...
+compiling scheduler.c...
+scheduler.h(4): warning:  #1-D: last line of file ends without a newline
+  #endif
+scheduler.c(61): warning:  #177-D: variable "i" was declared but never referenced
+                int i=0;
+scheduler.c(35): warning:  #550-D: variable "data_2send" was set but never used
+  static u16 adc_ave=0,data_2send=0,v=0,adc_ave1=0,data_2send1=0,v2=0;
+scheduler.c(35): warning:  #550-D: variable "v" was set but never used
+  static u16 adc_ave=0,data_2send=0,v=0,adc_ave1=0,data_2send1=0,v2=0;
+scheduler.c(35): warning:  #550-D: variable "data_2send1" was set but never used
+  static u16 adc_ave=0,data_2send=0,v=0,adc_ave1=0,data_2send1=0,v2=0;
+scheduler.c(35): warning:  #550-D: variable "v2" was set but never used
+  static u16 adc_ave=0,data_2send=0,v=0,adc_ave1=0,data_2send1=0,v2=0;
+scheduler.c(41): warning:  #177-D: variable "kk" was declared but never referenced
+  static int countter=0,kk=0;
+scheduler.c(43): warning:  #177-D: variable "ffts" was declared but never referenced
+  static float ffts[2],*fft1,*fft2,input_fft1[64],input_fft2[64];
+scheduler.c(48): warning:  #550-D: variable "fag" was set but never used
+  static int fag=0;
+scheduler.c: 9 warnings, 0 errors
+compiling network_evaluate.c...
+compiling delay.c...
+compiling sys.c...
+compiling usart.c...
+compiling myiic.c...
+compiling pca9685.c...
+compiling myfeature.c...
+..\SYSTEM\DSP\arm_math.h(281): warning:  #1215-D: #warning directive: "Define either ARM_MATH_CM4 OR ARM_MATH_CM3...By Default building on ARM_MATH_CM4....."
+  #warning "Define either ARM_MATH_CM4 OR ARM_MATH_CM3...By Default building on ARM_MATH_CM4....."
+..\SYSTEM\DSP\arm_math.h(528): warning:  #223-D: function "__CLZ" declared implicitly
+        signBits = __CLZ(in) - 1;
+..\SYSTEM\DSP\arm_math.h(532): warning:  #223-D: function "__CLZ" declared implicitly
+        signBits = __CLZ(-in) - 1;
+..\SYSTEM\DSP\arm_math.h(579): warning:  #223-D: function "__CLZ" declared implicitly
+        signBits = __CLZ(in) - 17;
+..\SYSTEM\DSP\arm_math.h(583): warning:  #223-D: function "__CLZ" declared implicitly
+        signBits = __CLZ(-in) - 17;
+..\SYSTEM\DSP\arm_math.h(4976): warning:  #223-D: function "__SMUAD" declared implicitly
+      acc = (q31_t) __SMUAD(S->A0, in);
+..\SYSTEM\DSP\arm_math.h(4980): warning:  #223-D: function "__SMLALD" declared implicitly
+      acc = __SMLALD(S->A1, (q31_t) *vstate, acc);
+..\SYSTEM\DSP\arm_math.h(4996): warning:  #223-D: function "__SSAT" declared implicitly
+      out = (q15_t) (__SSAT((acc >> 15), 16));
+..\SYSTEM\DSP\arm_math.h(5117): warning:  #223-D: function "__QADD" declared implicitly
+      *pIbeta = __QADD(product1, product2);
+..\SYSTEM\DSP\arm_math.h(5221): warning:  #223-D: function "__QSUB" declared implicitly
+      *pIb = __QSUB(product2, product1);
+..\SYSTEM\DSP\arm_math.h(5349): warning:  #223-D: function "__QADD" declared implicitly
+      *pId = __QADD(product1, product2);
+..\SYSTEM\DSP\arm_math.h(5352): warning:  #223-D: function "__QSUB" declared implicitly
+      *pIq = __QSUB(product4, product3);
+..\SYSTEM\DSP\arm_math.h(5469): warning:  #223-D: function "__QSUB" declared implicitly
+      *pIalpha = __QSUB(product1, product2);
+..\SYSTEM\DSP\arm_math.h(5472): warning:  #223-D: function "__QADD" declared implicitly
+      *pIbeta = __QADD(product4, product3);
+..\SYSTEM\feature_extraction\myfeature.c(270): warning:  #223-D: function "fmax" declared implicitly
+                max=fmax(a[i],max);
+..\SYSTEM\feature_extraction\myfeature.c(284): warning:  #223-D: function "fmin" declared implicitly
+                min=fmin(a[i],min);
+..\SYSTEM\feature_extraction\myfeature.c(532): warning:  #1-D: last line of file ends without a newline
+        
+..\SYSTEM\feature_extraction\myfeature.c: 17 warnings, 0 errors
+assembling cr4_fft_256_stm32.s...
+assembling cr4_fft_1024_stm32.s...
+compiling filter.c...
+compiling myMath.c...
+compiling TIM.c...
+compiling uart3.c...
+compiling core_cm3.c...
+assembling startup_stm32f10x_hd.s...
+compiling misc.c...
+compiling stm32f10x_adc.c...
+compiling stm32f10x_fsmc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_tim.c...
+linking...
+Program Size: Code=30556 RO-data=44412 RW-data=216 ZI-data=5520  
+FromELF: creating hex file...
+"..\OBJ\ADC.axf" - 0 Error(s), 42 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\lenovo\Desktop\EMG_team (1)\实验14  ADC实验\USER\RTE
+  F:\mdk5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0
+
+<h2>Collection of Component Files used:</h2>
+</pre>
+</body>
+</html>
